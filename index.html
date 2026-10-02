@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f5f1e8">
+<title>YOUR NEXT CHAPTER — Travel Workspace</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div id="app">
+  <header class="topbar">
+    <button class="wordmark" data-action="home" aria-label="我的旅程"><span>YOUR NEXT</span><strong>CHAPTER</strong></button>
+    <div class="top-meta"><span class="eyebrow">YOUR PERSONAL TRAVEL WORKSPACE</span><span id="save-status" class="save-status">✓ 已儲存</span></div>
+    <button class="icon-button" data-action="share" title="分享／備份">↗</button>
+  </header>
+  <main id="main" class="main"></main>
+  <nav class="bottom-nav" aria-label="主要導覽">
+    <button data-nav="trips"><span>⌂</span><small>我的旅程</small></button>
+    <button data-nav="itinerary"><span>▤</span><small>行程</small></button>
+    <button data-nav="add" class="add-nav"><span>＋</span><small>增加</small></button>
+    <button data-nav="search"><span>⌕</span><small>搜尋</small></button>
+    <button data-nav="today"><span>◷</span><small>旅途中</small></button>
+  </nav>
+</div>
+<div id="modal-root"></div>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="./data.js"></script><script src="./script.js"></script>
+</body></html>
